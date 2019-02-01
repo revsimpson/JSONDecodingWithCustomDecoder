@@ -1,0 +1,22 @@
+{
+   "Home":{
+      "Door":"A beautiful white door",
+      "NumberOfWindows":4,
+      "AlarmClock":"2018-11-28T15:28:42.9405508",
+      "Kitchen":[
+         {
+            "kitchenDescription":"A nice kitchen with white and blue colors",
+            "Parameters":[
+               {
+                  "Name":"Halve the kitchen",
+                  "Price":"2500 Euro"
+               },
+               {
+                  "Name":"Whole kitchen",
+                  "Price":"5000 euro"
+               }
+            ]
+         }
+      ]
+   }
+}
