@@ -8,6 +8,7 @@ When you decode data from JSON in Swift and your receiving data does not conform
 <B>Example Code</B>
 
 struct APIGetMyResponse: Codable {
+
     let activeYears: [ActieveJaren]
 
     enum CodingKeys: String, CodingKey {
@@ -16,7 +17,9 @@ struct APIGetMyResponse: Codable {
 }
 
 struct ActiveYears: Codable {
+
     let mydate: Date?
+    
     let number, year: Int
 
     enum CodingKeys: String, CodingKey {
