@@ -30,13 +30,22 @@ struct ActiveYears: Codable {
 }
 
 extension ActiveYears {
+
+
     init(from decoder:Decoder) throws {
+    
+    
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
+    
         number = try container.decode(Int.self, forKey:.number)
+        
+        
         jaar = try container.decode(Int.self, forKey: .year)
         
+        
         let dateString = try container.decode(String.self, forKey: .mydate)
+        
         mydate = ServerDateFormatter().DateformatterForCodable(dateString) <- You need to write a formatter to convert the date !
     }
 }
